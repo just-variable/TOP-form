@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "norse-bold";
+  src: url("/res/Norse-Bold.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  margin: -10px 0 0 -10px;
+  padding: 0;
+  height: calc(100vh + 10px);
+}
+
+.img-container {
+  background-image: url(/res/leaf-bg.jpg);
+  background-size: cover;
+  flex-basis: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.img-container .logo {
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 200px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-container .logo img {
+  height: inherit;
+  display: block;
+}
+.img-container .logo p {
+  font-family: norse-bold;
+  color: white;
+  font-size: 70px;
+  margin: 0;
+}
+
+.form-container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  background-color: #EEE;
+  font-family: Roboto, Verdana;
+}
+.form-container h3 {
+  color: #333;
+}
+.form-container .form-div {
+  background-color: #FFF;
+  border: 1px solid #CCC;
+  padding: 10px 10px 30px 100px;
+  box-shadow: 2px 2px 10px 2px #CCC;
+  clip-path: inset(-10px 0px);
+}
+.form-container section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form-container .form-line {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 100px;
+}
+.form-container .form-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.form-container .form-label {
+  font-size: 12px;
+  font-weight: 600;
+}
+.form-container input[type=text] {
+  padding: 5px 5px;
+  width: 230px;
+  border: 1px solid #DDD;
+  border-radius: 2px;
+}
+.form-container input[type=password] {
+  padding: 5px 5px;
+  width: 230px;
+  border: 1px solid #DDD;
+  border-radius: 2px;
+}
+.form-container button[type=submit] {
+  background-color: #596D48;
+  width: 160px;
+  margin: 30px 100px;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 10px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+}
+.form-container button[type=submit]:hover {
+  transition: 0.2s;
+  background-color: #506439;
+}
+.form-container p {
+  margin: 0px 100px;
+}
+.form-container a:link {
+  color: #596D48;
+  font-weight: 600;
+  text-decoration: none;
+}
+.form-container a:hover {
+  text-decoration: underline;
+}
+.form-container .error {
+  display: none;
+  color: red;
+  font-size: 10px;
+  margin: 0;
+}
+
+/*# sourceMappingURL=index.css.map */
